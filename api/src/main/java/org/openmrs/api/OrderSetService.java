@@ -112,7 +112,7 @@ public interface OrderSetService extends OpenmrsService {
 	/**
 	 * Get order set attribute by uuid 
 	 * 
-	 * @param uuid specifies the order set attribute uuid
+	 * @param uuid retrieves the order set attribute uuid
 	 * @return the {@link OrderSetAttribute} with the given uuid
 	 * @since 2.4.0
 	 * @should get the order set attribute with the given uuid
@@ -146,7 +146,7 @@ public interface OrderSetService extends OpenmrsService {
 	/**
 	 * Get order set attribute type by uuid 
 	 * 
-	 * @param uuid specifies the order set attribute type uuid
+	 * @param uuid retrieves the order set attribute type uuid
 	 * @return the {@link OrderSetAttributeType} with the given uuid
 	 * @since 2.4.0
 	 * @should return the orderSet attribute type with the given uuid
@@ -179,7 +179,7 @@ public interface OrderSetService extends OpenmrsService {
 	OrderSetAttributeType retireOrderSetAttributeType(OrderSetAttributeType orderSetAttributeType, String reason);
 
 	/**
-	 * Restores an order set attribute type that was previous retired 
+	 * Restores an order set attribute type that was previously retired 
 	 * 
 	 * @param orderSetAttributeType the order set attribute type to be un-retired
 	 * @return the OrderSetAttributeType unretired
