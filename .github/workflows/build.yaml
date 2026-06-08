@@ -53,7 +53,7 @@ jobs:
         run: mvn test ${{ matrix.test-profile }} --batch-mode --file pom.xml
       - name: Upload coverage to Codecov
         if: ${{ matrix.test-profile == '' && matrix.java-version == '25' && matrix.platform == 'ubuntu-latest' }}
-        uses: codecov/codecov-action@v5
+        uses: codecov/codecov-action@v7
         continue-on-error: true
         with:
           use_oidc: true
